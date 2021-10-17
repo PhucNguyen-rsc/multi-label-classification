@@ -14,9 +14,12 @@
 Step 1: Resize the images into the size of 128x128
 
 Step 2: Enhance the images' quality by using a trained autoencoder model
+
 ![image](https://user-images.githubusercontent.com/68393604/137612137-e0db5d70-fb7a-464c-bdc2-1d4226c7e51f.png)
 
 ![image](https://user-images.githubusercontent.com/68393604/137612159-0a2adb5d-39c0-4a33-8b31-7a06cd4367ae.png)
+
+
 
 Step 3: Augment images by using Albumentations’ s functions
 Step 4: Convert labels to fit with the multi-label model
