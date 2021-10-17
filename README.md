@@ -64,7 +64,16 @@ Link the web deployment: [Web deployment](https://youtu.be/bgvxYvRIEf0) <br>
 
 We have used Flask in order to deploy the model and W3CSS to style the web appearance. We also have made the web responsive to any changes so this appearance will be perfect on every type of screen.
 
-Link to use API: https://hackmd.io/5h9x63KvSYGz5lOqdS73uA
+### API:
+1. Open your browser to https://labs.play-with-docker.com/
+2. Click Login and then select docker from the drop-down list.
+3. Connect with your Docker Hub account.
+4. Once you’re logged in, click on the ADD NEW INSTANCE option on the left side bar. If you don’t see it, make your browser a little wider. After a few seconds, a terminal window opens in your browser.![](https://i.imgur.com/3JqCAEI.png)
+
+5. In the terminal, start your freshly pushed app.
+``` docker run -dp 5000:5000 vvai1710/babyshark-aiijc2021:web_v2``` or 
+```docker run -dp 5000:5000 vvai1710/babyshark-aiijc2021:web_v1_api```
+6. Click on the 5000 badge when it comes up and you should see the app with your modifications! Hooray! If the 5000 badge doesn’t show up, you can click on the “Open Port” button and type in 5000.![](https://i.imgur.com/2RR1lbz.png)
 ## 4. Model's strengths
 
 Using the labels’ converted 5x7 matrix, we can label the directions of traffic on the lanes from left to right, and easily distinguish the combinated attribute (for example,left+straight) of the image.
