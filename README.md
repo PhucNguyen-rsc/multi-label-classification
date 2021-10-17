@@ -60,6 +60,8 @@ After many trials-and-errors, we choose to use the ***ROC-AUC score*** since the
 
 ## 3. Deployment
 
+Link the web deployment: [Web deployment](https://youtu.be/bgvxYvRIEf0)
+
 
 ## 4. Model's strengths
 
