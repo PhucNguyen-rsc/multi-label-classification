@@ -39,5 +39,10 @@ Step 4: Convert labels to fit with the multi-label model
 
 ## 5. Obstacles
 
+1. **Lack of time:** We didn’t know about the new task until three days ago. So, we have to finish our solution in a rush
+2. **Low images’ quality:** the images in the new dataset the organizers provide us are in bad quality and random sizes
+3. **Too many directions to try:** despite we only have 3 days to finish our project, we have many different approaches to try on (such as: ocr models, normal classification, ….), and many models to train to pick out the best one.
+4. **Need many experiments to get the threshold**: we also have to submit multiple csv files with various thresholds to pick out the one that has the best accuracy on the test set.
+
 
 ## 6. Future vision
