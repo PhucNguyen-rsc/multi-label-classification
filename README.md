@@ -21,6 +21,11 @@ Step 2: Enhance the images' quality by using a trained autoencoder model
 ![image](https://user-images.githubusercontent.com/68393604/137612243-a66e42f5-46db-46ea-a0ad-b93507df1762.png)
 
 Step 3: Augment images by using Albumentations’ s functions
+     - Random brightness
+     - Random Fog
+     - Rotate
+     - Randow shadow
+     - Blur
 Step 4: Convert labels to fit with the multi-label model
 
 
