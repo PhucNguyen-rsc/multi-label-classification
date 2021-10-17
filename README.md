@@ -88,9 +88,9 @@ Compared to the normal classification model (which takes the whole label as a ne
 
 
 ## 6. Future vision
-We will try to find ways to make the web online
+* We will try to find ways to make the web online
 
-We will try to improve the accuracy by retraining the model; perhaps we can also try more new approaches
+* We will try to improve the accuracy by retraining the model; perhaps we can also try more new approaches
 
-We will also try to make a real-time system to cooperate with cameras on various type of vehicles.
+* We will also try to make a real-time system to cooperate with cameras on various type of vehicles.
 
