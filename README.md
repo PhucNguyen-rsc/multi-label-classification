@@ -61,7 +61,7 @@ After many trials-and-errors, we choose to use the ***ROC-AUC score*** since the
 ## 3. Deployment
 
 Link the web deployment: [Web deployment](https://youtu.be/bgvxYvRIEf0)
-
+We have used Flask in order to deploy the model and W3CSS to style the web appearance. We also have made the web responsive to any changes so this appearance will be perfect on every type of screen.
 
 ## 4. Model's strengths
 
