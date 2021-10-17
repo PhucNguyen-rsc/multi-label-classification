@@ -104,3 +104,4 @@ Compared to the normal classification model (which takes the whole label as a ne
 
 * We will also try to make a real-time system to cooperate with cameras on various type of vehicles.
 
+Check here for more : https://drive.google.com/drive/folders/1OgEm-CF21uqxOFEjyOhmhbyXiL6PlJXa?usp=sharing
