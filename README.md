@@ -33,14 +33,14 @@ We used 5 below Albumentations’ s functions to augment our image dataset
 
 Step 4: Convert labels to fit with the multi-label model
 
-Because there are 7 unique labels according to the given json file, and a maximum of 5 different attributes in one image, we decide to convert the labels in a special way to fit with the multi-label model.
+Because there are ***7 unique labels*** according to the given json file, and a maximum of ***5 different attributes*** in one image, we decide to convert the labels in a special way to fit with the multi-label model.
 
 * The 7 unique labels : “straight” , ”left”, “right”, “entrance to the ring”, “slightly to the left”, “slightly on the right”, “to the right followed by the left turn”.
 * The 5 attributes representing for the maximum of 5 lanes in an image.
 
 ![image](https://user-images.githubusercontent.com/68393604/137613928-7860b45b-f90f-48c9-95ea-8088eecd7af1.png)
 
-As you can see on the screen, this is a 5x7 matrix representing the label “left, right+straight” on the dataset. Since the maximum of attributes/lanes in an image is 5, there are 5 rows in this matrix. Similarly, as there are 7 types of basic attributes in the json file, this matrix also has 7 columns. 
+As you can see on the screen, this is a ***5x7 matrix*** representing the label “left, right+straight” on the dataset. Since the maximum of attributes/lanes in an image is 5, there are 5 rows in this matrix. Similarly, as there are 7 types of basic attributes in the json file, this matrix also has 7 columns. 
 
 After that, we flatten the matrix to fix it in our multi-label model.
 
@@ -49,13 +49,13 @@ After that, we flatten the matrix to fix it in our multi-label model.
 
 ## 2. Second stage
 
-In the second stage of the solution, we train our multi-label model. Below is the structure of our best model so far. 
+In the second stage of the solution, we train our multi-label model. Below is the *structure* of our best model so far. 
 
 ![image](https://user-images.githubusercontent.com/68393604/137613817-4aba8cd5-4a5d-4592-a515-a68cd477802e.png)
 
-Attention to our output layer, which has 35 nodes and a sigmoid activation, not softmax. 
+Attention to our output layer, which has ***35 nodes*** and ***a sigmoid activation***, not softmax. 
 
-After many trials-and-errors, we choose to use the ROC-AUC score since the normal accuracy metrics did not work well in this case. We also use binary cross-entropy loss to train this model. 
+After many trials-and-errors, we choose to use the ***ROC-AUC score*** since the normal accuracy metrics did not work well in this case. We also use ***binary cross-entropy*** loss to train this model. 
 
 
 ## 3. Deployment
@@ -66,12 +66,14 @@ After many trials-and-errors, we choose to use the ROC-AUC score since the norma
 Using the labels’ converted 5x7 matrix, we can label the directions of traffic on the lanes from left to right, and easily distinguish the combinated attribute (for example,left+straight) of the image.
 
 Compared to the normal classification model (which takes the whole label as a new class). Our model is:
-Able to break the labels into its most basic parts while still retaining its spatial information: For instance, we don’t take “left, right+straight” as one single, seperate class. Rather, we divide them into “left” on the first attribute, “straight” and “right” on the second attribute. 
-→ Be more flexible in practical situations:Since in reality, the model may encounter a sign that it hasn’t been trained on. 
 
-The other advantage : our model’s accuracy is also high on the public dataset (more than 98%), and can return the prediction results in a relatively short time. 
+***Able to break the labels into its most basic parts while still retaining its spatial information***: For instance, we don’t take “left, right+straight” as one single, seperate class. Rather, we divide them into “left” on the first attribute, “straight” and “right” on the second attribute. 
 
-Our current disadvantage: our model’s weight is still big → cannot publish the web online. We will try fixing this problem in the future. 
+→ Be more ***flexible in practical situations:*** Since in reality, the model may encounter a sign that it hasn’t been trained on. 
+
+***The other advantage :*** our model’s accuracy is also high on the public dataset (more than 98%), and can return the prediction results in a relatively short time. 
+
+***Our current disadvantage:*** our model’s weight is still big → cannot publish the web online. We will try fixing this problem in the future. 
 
 ## 5. Obstacles
 
