@@ -63,6 +63,16 @@ After many trials-and-errors, we choose to use the ROC-AUC score since the norma
 
 ## 4. Model's strengths
 
+Using the labels’ converted 5x7 matrix, we can label the directions of traffic on the lanes from left to right, and easily distinguish the combinated attribute (for example,left+straight) of the image.
+
+Compared to the normal classification model (which takes the whole label as a new class). Our model is:
+Able to break the labels into its most basic parts while still retaining its spatial information: For instance, we don’t take “left, right+straight” as one single, seperate class. Rather, we divide them into “left” on the first attribute, “straight” and “right” on the second attribute. 
+→ Be more flexible in practical situations:Since in reality, the model may encounter a sign that it hasn’t been trained on. 
+
+The other advantage : our model’s accuracy is also high on the public dataset (more than 98%), and can return the prediction results in a relatively short time. 
+
+Our current disadvantage: our model’s weight is still big → cannot publish the web online. We will try fixing this problem in the future. 
+
 ## 5. Obstacles
 
 1. **Lack of time:** We didn’t know about the new task until three days ago. So, we have to finish our solution in a rush
