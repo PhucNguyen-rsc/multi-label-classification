@@ -73,7 +73,8 @@ We have used Flask in order to deploy the model and W3CSS to style the web appea
 5. In the terminal, start your freshly pushed app.
 ``` docker run -dp 5000:5000 vvai1710/babyshark-aiijc2021:web_v2``` or 
 ```docker run -dp 5000:5000 vvai1710/babyshark-aiijc2021:web_v1_api```
-6. Click on the 5000 badge when it comes up and you should see the app with your modifications! Hooray! If the 5000 badge doesn’t show up, you can click on the “Open Port” button and type in 5000.![](https://i.imgur.com/2RR1lbz.png)
+6. Click on the 5000 badge when it comes up and you should see the app with your modifications! Hooray! If the 5000 badge doesn’t show up, you can click on the “Open Port” button and type in 5000. 
+
 ## 4. Model's strengths
 
 Using the labels’ converted 5x7 matrix, we can label the directions of traffic on the lanes from left to right, and easily distinguish the combinated attribute (for example,left+straight) of the image.
