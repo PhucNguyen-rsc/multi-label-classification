@@ -35,8 +35,8 @@ Step 4: Convert labels to fit with the multi-label model
 
 Because there are 7 unique labels according to the given json file, and a maximum of 5 different attributes in one image, we decide to convert the labels in a special way to fit with the multi-label model.
 
-* The 7 unique labels : “straight” , ”left”, “right”, “entrance to the ring”, “slightly to the left”, “slightly on the right”, “to the right followed by the left turn”
-* The 5 attributes representing for the maximum of 5 lanes in an image 
+* The 7 unique labels : “straight” , ”left”, “right”, “entrance to the ring”, “slightly to the left”, “slightly on the right”, “to the right followed by the left turn”.
+* The 5 attributes representing for the maximum of 5 lanes in an image.
 
 ![image](https://user-images.githubusercontent.com/68393604/137613928-7860b45b-f90f-48c9-95ea-8088eecd7af1.png)
 
