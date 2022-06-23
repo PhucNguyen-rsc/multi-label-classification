@@ -1,10 +1,10 @@
 # Multi-label-classification
 
 ## Team members
-* Tran Cong Thinh
-* Nguyen Hoang Phuc
+* [Tran Cong Thinh](https://github.com/trancongthinh6304)
+* [Nguyen Hoang Phuc](https://github.com/PhucNguyen-rsc)
 * Chau Hoang Tu
-* Vu Thi Quynh Nga
+* [Vu Thi Quynh Nga](https://github.com/ngavu2004)
 
 ## 2 stages of our solution:
 1. Preprocessing the input data
